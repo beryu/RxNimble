@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,12 +21,19 @@
 		3A7FDBC3218E37A80065F6C6 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632180218CE18000F190FD /* AnyError.swift */; };
 		3A7FDBC6218E37A80065F6C6 /* RxNimbleRxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CFEF9218DF97500E4F547 /* RxNimbleRxTest.framework */; };
 		3AD16F8521866AE7007FF6A8 /* RxNimbleRxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD16F7C21866AE7007FF6A8 /* RxNimbleRxBlocking.framework */; };
-		481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481CBA2B2263875C007F3053 /* Nimble.framework */; };
-		481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481CBA2D2263876F007F3053 /* Nimble.framework */; };
-		48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D322792ECF00CA7218 /* RxSwift.framework */; };
-		48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D522792ED400CA7218 /* RxTest.framework */; };
-		48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D722792EDB00CA7218 /* RxSwift.framework */; };
-		48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D922792EE000CA7218 /* RxBlocking.framework */; };
+		883CAB0E2ABAA2270028A2F9 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB0D2ABAA2270028A2F9 /* Nimble.xcframework */; };
+		883CAB0F2ABAA2270028A2F9 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB0D2ABAA2270028A2F9 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883CAB122ABAA2350028A2F9 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB112ABAA2350028A2F9 /* RxBlocking.xcframework */; };
+		883CAB132ABAA2350028A2F9 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB112ABAA2350028A2F9 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883CAB152ABAA23D0028A2F9 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB142ABAA23D0028A2F9 /* RxSwift.xcframework */; };
+		883CAB162ABAA23D0028A2F9 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB142ABAA23D0028A2F9 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883CAB182ABAA2780028A2F9 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB172ABAA2780028A2F9 /* RxTest.xcframework */; };
+		883CAB192ABAA2800028A2F9 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB0D2ABAA2270028A2F9 /* Nimble.xcframework */; };
+		883CAB1A2ABAA2800028A2F9 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB142ABAA23D0028A2F9 /* RxSwift.xcframework */; };
+		883CAB1C2ABAA2FA0028A2F9 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */; };
+		883CAB1D2ABAA2FA0028A2F9 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		883CAB1F2ABAA4190028A2F9 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */; };
+		883CAB202ABAA4190028A2F9 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,44 @@
 			remoteInfo = RxNimble;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		883CAB102ABAA2270028A2F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				883CAB162ABAA23D0028A2F9 /* RxSwift.xcframework in Embed Frameworks */,
+				883CAB132ABAA2350028A2F9 /* RxBlocking.xcframework in Embed Frameworks */,
+				883CAB0F2ABAA2270028A2F9 /* Nimble.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883CAB1E2ABAA2FA0028A2F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				883CAB1D2ABAA2FA0028A2F9 /* Quick.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883CAB212ABAA41A0028A2F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				883CAB202ABAA4190028A2F9 /* Quick.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A2CFEF9218DF97500E4F547 /* RxNimbleRxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxNimbleRxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +114,11 @@
 		48E1F2D522792ED400CA7218 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D722792EDB00CA7218 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D922792EE000CA7218 /* RxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883CAB0D2ABAA2270028A2F9 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
+		883CAB112ABAA2350028A2F9 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		883CAB142ABAA23D0028A2F9 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		883CAB172ABAA2780028A2F9 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +126,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */,
-				48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */,
-				481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */,
+				883CAB192ABAA2800028A2F9 /* Nimble.xcframework in Frameworks */,
+				883CAB1A2ABAA2800028A2F9 /* RxSwift.xcframework in Frameworks */,
+				883CAB182ABAA2780028A2F9 /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7FDBC6218E37A80065F6C6 /* RxNimbleRxTest.framework in Frameworks */,
+				883CAB1F2ABAA4190028A2F9 /* Quick.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +145,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */,
-				48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */,
-				481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */,
+				883CAB0E2ABAA2270028A2F9 /* Nimble.xcframework in Frameworks */,
+				883CAB152ABAA23D0028A2F9 /* RxSwift.xcframework in Frameworks */,
+				883CAB122ABAA2350028A2F9 /* RxBlocking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD16F8521866AE7007FF6A8 /* RxNimbleRxBlocking.framework in Frameworks */,
+				883CAB1C2ABAA2FA0028A2F9 /* Quick.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +237,11 @@
 		3AD16F6421866941007FF6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				883CAB1B2ABAA2FA0028A2F9 /* Quick.xcframework */,
+				883CAB172ABAA2780028A2F9 /* RxTest.xcframework */,
+				883CAB142ABAA23D0028A2F9 /* RxSwift.xcframework */,
+				883CAB112ABAA2350028A2F9 /* RxBlocking.xcframework */,
+				883CAB0D2ABAA2270028A2F9 /* Nimble.xcframework */,
 				48E1F2D922792EE000CA7218 /* RxBlocking.framework */,
 				48E1F2D722792EDB00CA7218 /* RxSwift.framework */,
 				48E1F2D522792ED400CA7218 /* RxTest.framework */,
@@ -242,6 +299,7 @@
 				3A7FDBC0218E37A80065F6C6 /* Sources */,
 				3A7FDBC4218E37A80065F6C6 /* Frameworks */,
 				3A7FDBC7218E37A80065F6C6 /* Resources */,
+				883CAB212ABAA41A0028A2F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +319,7 @@
 				3AD16F7821866AE7007FF6A8 /* Sources */,
 				3AD16F7921866AE7007FF6A8 /* Frameworks */,
 				3AD16F7A21866AE7007FF6A8 /* Resources */,
+				883CAB102ABAA2270028A2F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +337,7 @@
 				3AD16F8021866AE7007FF6A8 /* Sources */,
 				3AD16F8121866AE7007FF6A8 /* Frameworks */,
 				3AD16F8221866AE7007FF6A8 /* Resources */,
+				883CAB1E2ABAA2FA0028A2F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,7 +509,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -464,7 +524,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -495,7 +555,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -510,7 +570,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -533,7 +593,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = RxNimbleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +639,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = RxNimbleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -761,7 +821,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -776,7 +836,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -806,7 +866,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -821,7 +881,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -844,7 +904,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = RxNimbleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -890,7 +950,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = RxNimbleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
